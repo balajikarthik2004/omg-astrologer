@@ -23,6 +23,9 @@
   body {
     font-family: 'League Spartan', sans-serif !important;
   }
+  html {
+    font-size: 90%;
+  }
 
   body {
     @apply bg-gray-50 text-gray-900;
