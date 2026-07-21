@@ -14,12 +14,12 @@ export type OtpChannel = 'whatsapp' | 'sms';
  * fetch are faked locally so any phone number + any 6-digit OTP logs in.
  * Set to false to use the real backend again.
  */
-const USE_DUMMY_AUTH = true;
+export const USE_DUMMY_AUTH = true;
 
 const DUMMY_ACCESS_TOKEN = 'dummy-access-token';
 const DUMMY_REFRESH_TOKEN = 'dummy-refresh-token';
 
-const DUMMY_ASTROLOGER: Astrologer = {
+export const DUMMY_ASTROLOGER: Astrologer = {
   id: 'dummy-astrologer-1',
   name: 'Demo Astrologer',
   full_name: 'Demo Astrologer',
