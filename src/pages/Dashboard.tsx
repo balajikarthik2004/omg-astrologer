@@ -244,7 +244,7 @@ export function Dashboard() {
                         ))}
                       </Pie>
                       <Tooltip
-                        formatter={(value: number, _name, item) => [`${value} sessions`, item.payload.mode]}
+                        formatter={(value, _name, item) => [`${value} sessions`, item.payload.mode]}
                         contentStyle={{ borderRadius: 8, border: "1px solid #e1e0d9", fontSize: 12 }}
                       />
                     </PieChart>

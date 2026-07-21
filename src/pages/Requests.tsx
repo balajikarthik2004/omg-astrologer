@@ -179,8 +179,8 @@ export function Requests() {
   const [requests, setRequests] = useState<ConsultationQueueEntry[]>([]);
   const [astrologer, setAstrologer] = useState<Astrologer | null>(authService.getStoredAstrologer());
   const [respondingId, setRespondingId] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [info, setInfo] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
+  const [, setInfo] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<Tab>("notified");
   const [selectedRequest, setSelectedRequest] = useState<ConsultationQueueEntry | null>(null);
