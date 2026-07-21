@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "League Spartan", "sans-serif";
+  --color-primary: #293088;
+  /* Official OMG brand indigo (more vivid) */
+  --color-primary-variant: #131a72;
+  /* Official deep OMG navy */
+  --color-secondary: #e22e26;
+  /* Official OMG brand red (brighter) */
+  --color-secondary-variant: #a62622;
+  /* Deeper professional red */
+  --color-accent: #ffc507;
+  /* Official OMG gold accent */
+  --color-accent-variant: #e0aa00;
+  /* Deeper gold for hover/contrast */
+}
+
+@layer base {
+
+  html,
+  body {
+    font-family: 'League Spartan', sans-serif !important;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+
+  /* Custom Scrollbar for better UI */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+}
